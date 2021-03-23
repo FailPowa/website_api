@@ -1,5 +1,8 @@
+/home/florentin/site_freelance/git_repositories/website_api/src/main/java/com/website/api/Entity/Status.java
 /home/florentin/site_freelance/git_repositories/website_api/src/main/java/com/website/api/Repository/ProjectRepository.java
+/home/florentin/site_freelance/git_repositories/website_api/src/main/java/com/website/api/Repository/StatusRepository.java
 /home/florentin/site_freelance/git_repositories/website_api/src/main/java/com/website/api/Request/ProjectRequest.java
+/home/florentin/site_freelance/git_repositories/website_api/src/main/java/com/website/api/Controller/StatusController.java
 /home/florentin/site_freelance/git_repositories/website_api/src/main/java/com/website/api/Entity/Project.java
 /home/florentin/site_freelance/git_repositories/website_api/src/main/java/com/website/api/Controller/ProjectController.java
 /home/florentin/site_freelance/git_repositories/website_api/src/main/java/com/website/api/Application.java

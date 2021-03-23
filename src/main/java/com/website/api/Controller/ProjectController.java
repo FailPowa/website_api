@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @Controller
 @RequestMapping(path="/project")
@@ -19,18 +20,20 @@ public class ProjectController {
   @Autowired
   private ProjectRepository projectRepository;
 
+  @CrossOrigin
   @GetMapping(path="/all")
   public @ResponseBody Iterable<Project> getAll() {
     return projectRepository.findAll();
   }
 
+  @CrossOrigin
   @GetMapping(path="/{id}")
   public @ResponseBody Optional<Project> getById(@PathVariable Integer id) {
       return projectRepository.findById(id);
   }
 
   @PostMapping(path="/add")
-  public @ResponseBody String addProject(@RequestBody ProjectRequest request) {
+  public @ResponseBody Project addProject(@RequestBody ProjectRequest request) {
       Project p = new Project();
       p.setName(request.getName());
       p.setDescription(request.getDescription());
@@ -41,6 +44,6 @@ public class ProjectController {
       p.setUrl(request.getUrl());
       projectRepository.save(p);
 
-      return "Saved !";
+      return p;
   }
 }
