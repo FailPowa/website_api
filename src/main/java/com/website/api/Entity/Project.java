@@ -41,4 +41,8 @@ public class Project {
     @Getter
     @Setter
     private String url;
+
+    @Getter
+    @Setter
+    private String imageName;
 }

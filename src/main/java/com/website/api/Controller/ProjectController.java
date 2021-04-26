@@ -42,6 +42,7 @@ public class ProjectController {
       p.setColor(request.getColor());
       p.setGithub(request.getGithub());
       p.setUrl(request.getUrl());
+      p.setImageName(request.getImageName());
       projectRepository.save(p);
 
       return p;
