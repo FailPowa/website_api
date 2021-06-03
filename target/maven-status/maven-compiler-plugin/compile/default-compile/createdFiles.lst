@@ -1,5 +1,11 @@
-com/website/api/Request/ProjectRequest.class
+com/website/api/Entity/Status.class
+com/website/api/Entity/Contact.class
 com/website/api/Repository/ProjectRepository.class
 com/website/api/Application.class
 com/website/api/Entity/Project.class
 com/website/api/Controller/ProjectController.class
+com/website/api/Repository/StatusRepository.class
+com/website/api/Controller/StatusController.class
+com/website/api/Request/ProjectRequest.class
+com/website/api/Repository/ContactRepository.class
+com/website/api/Controller/ContactController.class

@@ -8,7 +8,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-public class Project {
+public class Contact {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     @Getter
@@ -20,29 +20,17 @@ public class Project {
 
     @Getter
     @Setter
-    private String description;
+    private String firstname;
 
     @Getter
     @Setter
-    private String icon;
+    private String mail;
 
     @Getter
     @Setter
-    private Boolean gem;
+    private String business;
 
     @Getter
     @Setter
-    private String color;
-
-    @Getter
-    @Setter
-    private String github;
-
-    @Getter
-    @Setter
-    private String url;
-
-    @Getter
-    @Setter
-    private String imageName;
+    private String message;
 }
