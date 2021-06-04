@@ -28,7 +28,6 @@ public class ContactController {
   @PostMapping
   public @ResponseBody Contact addContact(@RequestBody Contact newContact) {
     return contactRepository.findByMail(newContact.getMail()).map(contact -> {
-        System.out.println(contact);
         contact.setName(newContact.getName());
         contact.setFirstname(newContact.getFirstname());
         contact.setMail(newContact.getMail());
